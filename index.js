@@ -3,35 +3,6 @@
  * @param {*} themeConfig
  * @param {*} ctx
  */
-module.exports = (themeConfig, ctx) => {
-    return {
-        plugins:[
-            ['@vuepress/plugin-blog', {
-                permalink: '/:regular',
-                frontmatters: [
-                    {
-                        id: 'tags',
-                        keys: ['tags'],
-                        path: '/tag/',
-                        layout: 'Tags',
-                        scopeLayout: 'Tag'
-                    },
-                    {
-                        id: 'categories',
-                        keys: ['categories'],
-                        path: '/categories/',
-                        layout: 'Categories',
-                        scopeLayout: 'Category'
-                    },
-                    {
-                        id: 'timeline',
-                        keys: ['timeline'],
-                        path: '/timeline/',
-                        layout: 'TimeLines',
-                        scopeLayout: 'TimeLine'
-                    }
-                ]
-            }],
-        ]
-    };
-};
+module.exports = {
+    extend: '@vuepress/theme-blog'
+}
