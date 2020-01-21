@@ -23,7 +23,7 @@
                         <ClockIcon />
                         <span>{{ resolvePostDate(page.frontmatter.date) }}</span>
                     </div>
-                    <BlogTags :tags="page.frontmatter.tags" />
+                    <PostTags :tags="page.frontmatter.tags" />
                 </div>
             </div>
         </div>
@@ -38,14 +38,14 @@
 import Vue from "vue";
 import dayjs from "dayjs";
 import { NavigationIcon, ClockIcon } from "vue-feather-icons";
-import BlogTags from "@theme/components/BlogTags";
+import PostTags from "@theme/components/PostTags";
 import {
     Pagination,
     SimplePagination
 } from "@vuepress/plugin-blog/lib/client/components";
 
 export default {
-    components: { NavigationIcon, ClockIcon,BlogTags },
+    components: { NavigationIcon, ClockIcon, PostTags },
 
     data() {
         return {

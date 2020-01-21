@@ -1,5 +1,5 @@
 <template>
-    <router-link class="blog-tag" :to="'/tag/'+tag">{{ tag }}</router-link>
+    <router-link class="post-tag" :to="'/tag/'+tag">{{ tag }}</router-link>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.blog-tag {
+.post-tag {
     display: inline-flex;
     align-items: center;
     word-break: break-word;
@@ -29,7 +29,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-    .blog-tag {
+    .post-tag {
         font-size: 14px;
         padding: 3px 10px;
         margin-right: 10px;
