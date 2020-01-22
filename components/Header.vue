@@ -98,7 +98,7 @@ export default {
         }
 
         .search-box {
-            font-family: PT Serif, Serif;
+            font-family: '';
             margin-left: 20px;
 
             input {
