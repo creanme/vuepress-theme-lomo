@@ -37,7 +37,6 @@ export default {
     top: 0;
     width: 100vw;
     box-sizing: border-box;
-    background-color: $headerBgColor;
     padding: 6px 30px 8px;
     margin: auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03), 0 6px 6px rgba(0, 0, 0, 0.05);
