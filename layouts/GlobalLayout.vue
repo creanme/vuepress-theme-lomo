@@ -40,7 +40,6 @@ export default {
 <style lang="stylus">
 #vuepress-theme-blog__global-layout {
     min-height: 100vh;
-    background: linear-gradient(45deg, #cff, #ffc);
     word-wrap: break-word;
 
     .content-wrapper {
