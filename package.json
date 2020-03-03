@@ -5,5 +5,8 @@
     "main": "index.js",
     "repository": "git@github.com:creanme/vuepress-theme-lomo.git",
     "author": "creanme <creanme@live.com>",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@vuepress/theme-blog": "^2.1.0"
+    }
 }
