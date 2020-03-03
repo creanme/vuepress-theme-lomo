@@ -42,6 +42,10 @@ export default {
     min-height: 100vh;
     word-wrap: break-word;
 
+    .ui-post-title {
+        font-family: none;
+    }
+
     .content-wrapper {
         padding: 160px 15px 80px 15px;
         min-height: calc(100vh - 80px - 60px - 160px);
