@@ -105,7 +105,7 @@ export default {
 }
 
 .ui-post-title {
-    font-family: auto;
+    font-family: none;
     font-size: 28px;
     border-bottom: 0;
 
