@@ -1,7 +1,7 @@
 {
     "name": "vuepress-theme-lomo",
     "description": "a vuepress blog theme",
-    "version": "1.0.4",
+    "version": "1.0.9",
     "main": "index.js",
     "repository": "git@github.com:creanme/vuepress-theme-lomo.git",
     "author": "creanme <creanme@live.com>",

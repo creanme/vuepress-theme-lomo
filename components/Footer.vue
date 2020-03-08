@@ -1,17 +1,20 @@
 <template>
-    <footer class="footer">
-        <a class="internet-content-provider">
-            {{internetContentProvider}}
+    <footer class="footer" v-if="internetContentProvider">
+        <a class="internet-content-provider" :href="internetContentProvider.url">
+            {{internetContentProvider.provider}}
         </a>
     </footer>
 </template>
 
 <script>
 export default {
-    computed:{
-        internetContentProvider(){
-            return this.$themeConfig && this.$themeConfig && this.$themeConfig.internetContentProvider
+    data(){
+        return {
+            internetContentProvider: {}
         }
+    },
+    created(){
+        this.$set(this, 'internetContentProvider', this.$themeConfig && this.$themeConfig && this.$themeConfig.internetContentProvider)
     }
 };
 </script>
